@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: rgb(128, 122, 122);
+    color: rgba(255, 255, 255, 0.767);
+    background-image: linear-gradient(to right bottom, #ac9393, #957f7f, #7f6c6c, #6a5959, #554747, #574142, #593c3c, #5a3637, #713a3b, #883e3f, #a04142, #b74444);
+}
+
+.logomedidas {
+    width: 70px ;
+    height: 70px;
+
+    
+}
+
+.titulo h1{
+    width: 110%cm;
+    height: 100px;
+    font-family: oswald;
+    font-size: 60px;
+    width: 315%;
+    text-align: center;
+    color: rgb(109, 30, 30);
+}
+
+/* HEADER */
+
+
+
+/* nav */
+nav{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    float: right;
+    padding-block: 1;
+   
+    
+}
+nav ul li{
+    display: inline;
+    padding: 12px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: oswald;
+    transition: all 0.3s ease-in-out
+    
+}
+
+nav ul li a:hover{
+    color:whitesmoke;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: oswald;
+    src: url(fuentes/static/Oswald-Regular.ttf);
+}
+/* NAV--------------------------------------------------------------- */
+/* contenedores padres e hijos */
+.contenedorPadre{
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.contenedorPadre > .header,
+.contenedorPadre > .contenido,
+.contenedorPadre > .sidebar,
+.contenedorPadre > .footer,
+.contenedorPadre > div a{
+    background: transparent;
+    padding: 20px;
+    border: 4px solid rgb(44, 33, 33);
+}
+
+/* header y footer */
+.contenedorPadre .header,
+.contenedorPadre .footer{
+    grid-column: 1/4;
+    background: transparent;
+    color: black;
+    
+}
+/* contenido */
+.contenedorPadre .contenido{
+    grid-column: 1/4;
+    text-align: center;
+    padding: 20px;
+    
+
+}
+
+/* logos */
+.imgLogoLol{
+    mix-blend-mode: darken;
+    filter: brightness(0.5);
+}
+
+.imgLogoValorant{
+    mix-blend-mode: darken;
+}
+
+.contenedorPadre .contenido img{
+
+margin-top: 12px;
+}
+
+.contenedorPadre .contenido h1,
+ .contenedorPadre .contenido a{
+    width: 100%;
+    height: 85px;
+    font-size: 50px;
+    font-style: oblique;
+    color: black;
+    padding: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.contenedorPadre .contenido h1,
+ .contenedorPadre .contenido a:hover{
+    width: 100%;
+    height: 85px;
+    font-size: 50px;
+    cursor: pointer;
+    font-style: italic;
+    color:white;
+    padding: 50px;
+}
+
+/* cierre de contenido */
+
+/* footer */
+
+.navFooter ul li a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: oswald;
+    transition: all 0.3s ease-in-out;
+    font-size: 21px;
+    text-align: center;
+
+    
+}
+
+.navFooter ul li a:hover{
+    color:whitesmoke;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: oswald;
+    src: url(fuentes/static/Oswald-Regular.ttf);
+}
+
+/* footer 2 */
+
+.social{
+    height: 120px;
+    font-family: oswald;
+    font-size: 38px;
+    width: 317%;
+    text-align: center;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: black;
+    transition: all 0.3s ease;
+}
+
+
+
+.links a:hover{
+    
+    color:white;
+   
+}
+
+.h5 a{
+    font-size: 100%;
+    width: 42.5%;
+    height: 70 px;
+    display: flex;
+    float: right;
+}
+
+.h5 a:hover {
+    color: red;
+}
+
+@media screen and (max-width: 768px){
+  
+    .titulo{
+        text-align: center;
+    }
+    .contenedorPadre .header{
+        grid-column: 1/4;
+    }
+    .header{
+        text-align: center;
+    }
+    .contenedorPadre .contenido{
+        grid-column: 1/4;
+        padding: 10px;
+    }
+
+    .contenidoPadre .footer{
+        grid-column: 1/4;
+    }
+
+    .navFooter{
+        grid-column: 1/4;
+    }
+
+    .social{
+     align-items: center;
+    }
+
+}
